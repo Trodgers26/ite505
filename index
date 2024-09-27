@@ -1,184 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-header {
-    background-color: #b5c84c; 
-    padding: 30px;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="soupboicss.css">
 
-h1 {
-    margin: 0;
-}
+    <title>soup boi athletics</title>
+</head>
+<body>
+    <header>
+        <h1>SOUP BOI ATHLETICS | fitness with attitude</h1>
+        <nav>
+            <ul class="nav-links">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#community">Community</a></li>
+</ul>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
+            <div class="nav-icons">
+    <input type="text" placeholder="Search...">
+    <a href="#cart">&#x1F6D2;</a> <!-- Shopping Cart -->
+    <a href="#profile">&#x1F464;</a> <!-- User -->
+</div>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-links li {
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 0;
-    font-size: 16px;
-}
-
-.nav-links a::before,
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #333; /* Line color */
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.nav-links a::before {
-    top: -5px; /* Distance from the text */
-}
-
-.nav-links a::after {
-    bottom: -5px; /* Distance from the text */
-}
-
-.nav-links a:hover::before,
-.nav-links a:hover::after {
-    transform: scaleX(1);
-}
-.icon-container {
-    display: flex;
-    gap: 20px; /* Space between icons */
-}
-
-.icon {
-    display: inline-block;
-    border-radius: 50%; /* Makes the border circular */
-    padding: 10px; /* Padding inside the circle */
-    transition: border 0.3s ease; /* Smooth transition */
-    position: relative; /* Required for pseudo-elements */
-}
-
-.icon img {
-    width: 30px; /* Adjust size of icons */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.icon::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid transparent; /* Border color when not hovered */
-    border-radius: 50%; /* Circular border */
-    transition: border-color 0.3s ease; /* Smooth transition for the border color */
-}
-
-.icon:hover::before {
-    border-color: #333; /* Change this to your desired hover border color */
-}
-
-
-input[type="text"] {
-    padding: 5px;
-    border: none; /* Remove the border */
-    border-radius: 20px; /* Adjust the radius for rounded edges */
-    outline: none; /* Remove the default outline when focused */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for depth */
-}
-
-
-.icon {
-    width: 24px; 
-    height: 24px; 
-}
-
-.product-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.product1 {
-    border: 1px solid #ccc;  /* Border for the product box */
-    padding: 20px;           /* Padding inside the product box */
-    width: 30%;              /* Width of each product box */
-    height: 200px;           /* Set a fixed height */
-    text-align: center;      /* Center the text inside the box */
-    margin: 10px;           /* Add margin around each product box for spacing */
-    box-sizing: border-box;  /* Ensure padding and border are included in width/height */
-}
-.product2 {
-    border: 1px solid #ccc;  /* Border for the product box */
-    padding: 0px;           /* Padding inside the product box */
-    width: 30%;              /* Width of each product box */
-    height: auto;           /* Set a fixed height */
-    text-align: center;      /* Center the text inside the box */
-    margin: 10px;           /* Add margin around each product box for spacing */
-    box-sizing: border-box;  /* Ensure padding and border are included in width/height */
-}
-.product3 {
-    border: 1px solid #ccc;  /* Border for the product box */
-    padding: 20px;           /* Padding inside the product box */
-    width: 30%;              /* Width of each product box */
-    height: 200px;           /* Set a fixed height */
-    text-align: center;      /* Center the text inside the box */
-    margin: 10px;           /* Add margin around each product box for spacing */
-    box-sizing: border-box;  /* Ensure padding and border are included in width/height */
-}
-
-.product2 img {
-    max-width: 100%;          /* Limits the width to the container size */
-    max-height: 400px;        /* Set a maximum height (adjust as needed) */
-    width: auto;              /* Maintains the aspect ratio */
-    height: auto;             /* Maintains the aspect ratio */
-}
-
+        </nav>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product1"><p>image1</p></div>
+            <div class="product2"><p><img src="C:\Users\timmr\OneDrive - Salem State University\Desktop\test\img\image2.png"</p></div>
+            <div class="product3"><p>image3</p></div>
+        </div>
+		
+    </main>
 	
-footer {
-    background-color: #b5c84c; /* Same color as header */
-    color: white; /* Text color */
-    text-align: center;
-    padding: 10px;
-    position: center; /* Ensure proper positioning */
-    bottom: 0; /* Align to bottom */
-    width: 100%; /* Full width */
-    margin-top: 20px; /* Space above footer */
-}
-}
+	<footer>
+    <p>2914 Brothy Way, Austin, Texas</p>
+</footer>
+
+</body>
+</html>
