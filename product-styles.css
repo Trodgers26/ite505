@@ -1,0 +1,106 @@
+/* General Styles for Product Listings, Cart, and Checkout Pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+/* Flexbox Layout for Checkout */
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.checkout-summary {
+    flex: 1;
+}
+
+.checkout-form {
+    flex: 1;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .table th, .table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #b5c84c;
+        color: white;
+    }
+
+    .table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Product Image */
+.product-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.button {
+    background-color: #b5c84c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .button:hover {
+        background-color: #9fae3b;
+    }
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    .product-image {
+        width: 80px;
+    }
+}
